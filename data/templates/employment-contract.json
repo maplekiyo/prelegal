@@ -1,0 +1,89 @@
+{
+  "id": "employment-contract",
+  "name": "Employment Contract",
+  "shortName": "Employment Contract",
+  "description": "A standard at-will employment agreement defining role, compensation, benefits, and conditions of employment.",
+  "version": "1.0",
+  "category": "employment",
+  "fields": [
+    {
+      "id": "employer_name",
+      "label": "Employer Full Legal Name",
+      "type": "text",
+      "required": true,
+      "placeholder": "Acme Corporation"
+    },
+    {
+      "id": "employer_address",
+      "label": "Employer Address",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "123 Main St, San Francisco, CA 94105"
+    },
+    {
+      "id": "employee_name",
+      "label": "Employee Full Legal Name",
+      "type": "text",
+      "required": true,
+      "placeholder": "John Smith"
+    },
+    {
+      "id": "employee_address",
+      "label": "Employee Address",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "456 Elm St, San Francisco, CA 94107"
+    },
+    {
+      "id": "job_title",
+      "label": "Job Title",
+      "type": "text",
+      "required": true,
+      "placeholder": "Senior Software Engineer"
+    },
+    {
+      "id": "start_date",
+      "label": "Start Date",
+      "type": "date",
+      "required": true,
+      "placeholder": ""
+    },
+    {
+      "id": "salary_amount",
+      "label": "Annual Base Salary",
+      "type": "text",
+      "required": true,
+      "placeholder": "$120,000"
+    },
+    {
+      "id": "pay_frequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "required": true,
+      "options": ["weekly", "bi-weekly", "semi-monthly", "monthly"],
+      "defaultValue": "bi-weekly"
+    },
+    {
+      "id": "benefits",
+      "label": "Benefits",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "Health, dental, and vision insurance; 15 days PTO per year; 401(k) with 4% employer match"
+    },
+    {
+      "id": "work_location",
+      "label": "Primary Work Location",
+      "type": "text",
+      "required": true,
+      "placeholder": "San Francisco, CA (hybrid)"
+    },
+    {
+      "id": "governing_law_state",
+      "label": "Governing Law (State)",
+      "type": "text",
+      "required": true,
+      "placeholder": "California"
+    }
+  ],
+  "content": "EMPLOYMENT CONTRACT\n\nThis Employment Contract (this \"Agreement\") is entered into by and between:\n\n{{employer_name}}, located at {{employer_address}} (\"Employer\"); and\n\n{{employee_name}}, residing at {{employee_address}} (\"Employee\").\n\n1. POSITION AND START DATE\n\nEmployer agrees to employ Employee in the position of {{job_title}}, commencing on {{start_date}}. Employee's primary work location will be {{work_location}}.\n\n2. AT-WILL EMPLOYMENT\n\nEmployee's employment with Employer is at-will, meaning either Party may terminate the employment relationship at any time, with or without cause or advance notice, subject to applicable law.\n\n3. COMPENSATION\n\nEmployee shall receive an annual base salary of {{salary_amount}}, paid {{pay_frequency}} in accordance with Employer's standard payroll practices, less applicable withholdings and deductions.\n\n4. BENEFITS\n\nEmployee shall be eligible for the following benefits, subject to the terms of Employer's benefit plans as amended from time to time:\n\n{{benefits}}\n\nEmployer reserves the right to modify benefit plans at any time.\n\n5. DUTIES AND RESPONSIBILITIES\n\nEmployee shall devote their full professional time, attention, and best efforts to the performance of their duties as {{job_title}} and shall comply with all Employer policies, procedures, and directives as communicated from time to time.\n\n6. CONFIDENTIALITY AND PROPRIETARY INFORMATION\n\nEmployee agrees to hold in strict confidence all proprietary and confidential information of Employer and its clients, including trade secrets, business plans, customer data, and technical information, and not to disclose or use such information for any purpose other than performing their duties. This obligation continues after termination of employment.\n\n7. INTELLECTUAL PROPERTY ASSIGNMENT\n\nEmployee agrees that all inventions, works of authorship, developments, improvements, and trade secrets conceived or created by Employee during employment that relate to Employer's business or result from work performed for Employer are the sole property of Employer and Employee hereby assigns all rights therein to Employer.\n\n8. NON-SOLICITATION\n\nDuring employment and for one (1) year thereafter, Employee agrees not to solicit Employer's employees or clients for competitive purposes.\n\n9. OUTSIDE ACTIVITIES\n\nDuring employment, Employee shall not engage in any outside business activity that conflicts with Employee's duties to Employer or that uses Employer's resources without prior written consent.\n\n10. GOVERNING LAW\n\nThis Agreement is governed by the laws of the State of {{governing_law_state}} and applicable federal law. Any dispute arising from this Agreement shall be resolved in the courts of {{governing_law_state}}.\n\n11. ENTIRE AGREEMENT\n\nThis Agreement constitutes the entire agreement between the Parties regarding employment and supersedes any prior representations, understandings, or agreements. Any modification must be in writing and signed by both Parties.\n\nIN WITNESS WHEREOF, the Parties have signed this Agreement.\n\n{{employer_name}}\n\nSignature: _______________________________\nName: ___________________________________\nTitle: ____________________________________\nDate: ____________________________________\n\n{{employee_name}} (Employee)\n\nSignature: _______________________________\nDate: ____________________________________\n"
+}
