@@ -1,0 +1,88 @@
+{
+  "id": "service-agreement",
+  "name": "Services Agreement",
+  "shortName": "Services Agreement",
+  "description": "A contract between a client and a service provider defining the scope of work, payment terms, and conditions for professional services.",
+  "version": "1.0",
+  "category": "commercial",
+  "fields": [
+    {
+      "id": "client_name",
+      "label": "Client Full Legal Name",
+      "type": "text",
+      "required": true,
+      "placeholder": "Acme Corporation"
+    },
+    {
+      "id": "client_address",
+      "label": "Client Address",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "123 Main St, San Francisco, CA 94105"
+    },
+    {
+      "id": "provider_name",
+      "label": "Service Provider Full Legal Name",
+      "type": "text",
+      "required": true,
+      "placeholder": "Jane Doe Consulting LLC"
+    },
+    {
+      "id": "provider_address",
+      "label": "Service Provider Address",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "789 Oak Ave, Austin, TX 73301"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "placeholder": ""
+    },
+    {
+      "id": "services_description",
+      "label": "Description of Services",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "Software development, including design, coding, testing, and delivery of the features described in the attached Statement of Work."
+    },
+    {
+      "id": "fee_amount",
+      "label": "Fee Amount",
+      "type": "text",
+      "required": true,
+      "placeholder": "$10,000"
+    },
+    {
+      "id": "payment_schedule",
+      "label": "Payment Schedule",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "50% upon signing, 50% upon delivery"
+    },
+    {
+      "id": "start_date",
+      "label": "Project Start Date",
+      "type": "date",
+      "required": true,
+      "placeholder": ""
+    },
+    {
+      "id": "end_date",
+      "label": "Project End Date",
+      "type": "date",
+      "required": true,
+      "placeholder": ""
+    },
+    {
+      "id": "governing_law_state",
+      "label": "Governing Law (State)",
+      "type": "text",
+      "required": true,
+      "placeholder": "California"
+    }
+  ],
+  "content": "SERVICES AGREEMENT\n\nThis Services Agreement (this \"Agreement\") is entered into as of {{effective_date}} (the \"Effective Date\") by and between:\n\n{{client_name}}, located at {{client_address}} (\"Client\"); and\n\n{{provider_name}}, located at {{provider_address}} (\"Service Provider\").\n\n1. SERVICES\n\nService Provider agrees to perform the following services for Client (the \"Services\"):\n\n{{services_description}}\n\nService Provider shall commence the Services on {{start_date}} and complete them by {{end_date}}, unless the Parties agree otherwise in writing.\n\n2. FEES AND PAYMENT\n\nIn consideration for the Services, Client shall pay Service Provider {{fee_amount}} in accordance with the following schedule:\n\n{{payment_schedule}}\n\nPayments are due within fifteen (15) days of invoice. Late payments accrue interest at the rate of 1.5% per month.\n\n3. INDEPENDENT CONTRACTOR\n\nService Provider is an independent contractor, not an employee of Client. Service Provider is solely responsible for all taxes, withholdings, and other obligations arising from compensation received under this Agreement. Nothing in this Agreement creates a partnership, joint venture, or agency relationship between the Parties.\n\n4. INTELLECTUAL PROPERTY\n\nUpon receipt of full payment, Service Provider assigns to Client all right, title, and interest in any work product created specifically for Client under this Agreement. Service Provider retains ownership of any pre-existing tools, frameworks, or materials (\"Background IP\") and grants Client a non-exclusive, perpetual license to use any Background IP incorporated in the deliverables.\n\n5. CONFIDENTIALITY\n\nEach Party agrees to hold the other Party's confidential information in strict confidence and not to disclose it to any third party or use it for any purpose other than performing this Agreement. This obligation survives termination for two (2) years.\n\n6. WARRANTIES\n\nService Provider represents and warrants that: (a) the Services will be performed in a professional and workmanlike manner; (b) Service Provider has the right to enter into this Agreement; and (c) the deliverables will not infringe any third-party intellectual property rights.\n\n7. LIMITATION OF LIABILITY\n\nIn no event shall either Party be liable to the other for any indirect, incidental, special, consequential, or punitive damages. Each Party's aggregate liability under this Agreement shall not exceed the total fees paid or payable under this Agreement in the three (3) months preceding the event giving rise to the claim.\n\n8. TERMINATION\n\nEither Party may terminate this Agreement upon thirty (30) days' written notice. Client shall pay for all Services performed through the termination date. Upon termination, each Party shall return or destroy the other Party's confidential information.\n\n9. GOVERNING LAW\n\nThis Agreement is governed by the laws of the State of {{governing_law_state}}, without regard to its conflict of laws provisions. Any disputes arising under this Agreement shall be resolved in the state or federal courts located in {{governing_law_state}}.\n\n10. ENTIRE AGREEMENT\n\nThis Agreement constitutes the entire agreement between the Parties regarding its subject matter and supersedes all prior agreements and understandings.\n\nIN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.\n\n{{client_name}}\n\nSignature: _______________________________\nName: ___________________________________\nTitle: ____________________________________\nDate: ____________________________________\n\n{{provider_name}}\n\nSignature: _______________________________\nName: ___________________________________\nTitle: ____________________________________\nDate: ____________________________________\n"
+}

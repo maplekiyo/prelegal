@@ -1,0 +1,69 @@
+{
+  "id": "mutual-nda",
+  "name": "Mutual Non-Disclosure Agreement",
+  "shortName": "Mutual NDA",
+  "description": "A bilateral confidentiality agreement protecting proprietary information shared between two parties. Based on the Common Paper MNDA v1.0.",
+  "version": "1.0",
+  "source": "Common Paper MNDA v1.0 (CC BY 4.0)",
+  "category": "confidentiality",
+  "fields": [
+    {
+      "id": "party1_name",
+      "label": "Party 1 Full Legal Name",
+      "type": "text",
+      "required": true,
+      "placeholder": "Acme Corporation"
+    },
+    {
+      "id": "party1_address",
+      "label": "Party 1 Address",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "123 Main St, San Francisco, CA 94105"
+    },
+    {
+      "id": "party2_name",
+      "label": "Party 2 Full Legal Name",
+      "type": "text",
+      "required": true,
+      "placeholder": "Beta LLC"
+    },
+    {
+      "id": "party2_address",
+      "label": "Party 2 Address",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "456 Market St, New York, NY 10001"
+    },
+    {
+      "id": "effective_date",
+      "label": "Effective Date",
+      "type": "date",
+      "required": true,
+      "placeholder": ""
+    },
+    {
+      "id": "purpose",
+      "label": "Purpose of Disclosure",
+      "type": "textarea",
+      "required": true,
+      "placeholder": "Evaluating a potential business partnership between the parties"
+    },
+    {
+      "id": "term_years",
+      "label": "Agreement Term (years)",
+      "type": "number",
+      "required": true,
+      "placeholder": "2",
+      "defaultValue": "2"
+    },
+    {
+      "id": "governing_law_state",
+      "label": "Governing Law (State)",
+      "type": "text",
+      "required": true,
+      "placeholder": "California"
+    }
+  ],
+  "content": "MUTUAL NON-DISCLOSURE AGREEMENT\n\nThis Mutual Non-Disclosure Agreement (this \"Agreement\") is entered into as of {{effective_date}} (the \"Effective Date\") by and between:\n\n{{party1_name}}, located at {{party1_address}} (\"Party 1\"); and\n\n{{party2_name}}, located at {{party2_address}} (\"Party 2\").\n\nParty 1 and Party 2 are each referred to herein as a \"Party\" and collectively as the \"Parties.\"\n\n1. PURPOSE\n\nThe Parties wish to explore {{purpose}} (the \"Purpose\") and, in connection with the Purpose, each Party may disclose to the other certain confidential and proprietary information.\n\n2. CONFIDENTIAL INFORMATION\n\n\"Confidential Information\" means any information or data disclosed by either Party that is marked as confidential or that reasonably should be understood to be confidential given the nature of the information and the circumstances of disclosure, including but not limited to technical data, trade secrets, know-how, research, product plans, products, services, customer lists, markets, software, developments, inventions, processes, formulas, technology, designs, drawings, engineering, hardware configuration information, marketing, finances or other business information.\n\nConfidential Information does not include information that: (a) is or becomes publicly known through no breach of this Agreement by the receiving Party; (b) was rightfully known by the receiving Party prior to disclosure by the disclosing Party; (c) is received from a third party without restriction on disclosure; or (d) was independently developed by the receiving Party without use of Confidential Information.\n\n3. OBLIGATIONS\n\nEach Party agrees: (a) to hold the other Party's Confidential Information in strict confidence using no less than reasonable care; (b) not to disclose such Confidential Information to any third party without the prior written consent of the disclosing Party; (c) to use such Confidential Information solely for the Purpose; and (d) to limit access to such Confidential Information to those of its employees and contractors who have a need to know and who are bound by confidentiality obligations at least as protective as those in this Agreement.\n\n4. TERM\n\nThis Agreement commences on the Effective Date and continues for {{term_years}} year(s) unless earlier terminated by either Party upon thirty (30) days' written notice to the other Party. Each Party's obligations with respect to Confidential Information disclosed during the term of this Agreement survive for two (2) years after the expiration or termination of this Agreement.\n\n5. RETURN OR DESTRUCTION OF INFORMATION\n\nUpon the written request of the disclosing Party, the receiving Party shall promptly return or certify destruction of all Confidential Information and any copies thereof.\n\n6. NO LICENSE\n\nNothing in this Agreement grants either Party any rights in or to the other Party's Confidential Information except as expressly set forth herein. Each Party retains all right, title, and interest in and to its own Confidential Information.\n\n7. GOVERNING LAW\n\nThis Agreement is governed by the laws of the State of {{governing_law_state}}, without regard to its conflict of laws provisions.\n\n8. ENTIRE AGREEMENT\n\nThis Agreement constitutes the entire agreement between the Parties with respect to its subject matter and supersedes all prior and contemporaneous agreements, understandings, negotiations and discussions, whether oral or written.\n\nIN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.\n\n{{party1_name}}\n\nSignature: _______________________________\nName: ___________________________________\nTitle: ____________________________________\nDate: ____________________________________\n\n{{party2_name}}\n\nSignature: _______________________________\nName: ___________________________________\nTitle: ____________________________________\nDate: ____________________________________\n"
+}
