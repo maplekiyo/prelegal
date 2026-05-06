@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-dm-sans: "DM Sans", system-ui, sans-serif;
+  --font-lora: "Lora", Georgia, serif;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Subtle dot grid texture for form panel */
+.dot-grid {
+  background-image: radial-gradient(circle, #1e3050 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Document preview inline styles */
+.nda-content {
+  font-family: var(--font-lora);
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  color: #1a1209;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.nda-content .filled-value {
+  font-weight: 600;
+  color: #0b1629;
+  text-decoration: underline;
+  text-decoration-color: #c4993a;
+  text-underline-offset: 2px;
+}
+
+.nda-content .empty-placeholder {
+  color: #c4993a;
+  font-style: italic;
+  border-bottom: 1px dashed #c4993a;
+}
+
+/* Custom scrollbar for dark panel */
+.scrollbar-dark::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-dark::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background: #1e3050;
+  border-radius: 2px;
+}
+
+/* Custom scrollbar for light panel */
+.scrollbar-light::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-light::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-light::-webkit-scrollbar-thumb {
+  background: #ede4cd;
+  border-radius: 2px;
+}
+
+/* Input focus gold glow */
+.input-field {
+  background: transparent;
+  border: 1px solid #1e3050;
+  border-radius: 4px;
+  color: #e8edf4;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  font-family: var(--font-dm-sans);
+  font-size: 0.875rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #3a5070;
+}
+
+.input-field:focus {
+  border-color: #c4993a;
+  box-shadow: 0 0 0 2px rgba(196, 153, 58, 0.12);
+}
+
+.input-field[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.4) sepia(1) saturate(0.6) hue-rotate(5deg);
+  cursor: pointer;
+}
+
+textarea.input-field {
+  resize: vertical;
+  min-height: 72px;
+}
+
+/* Paper shadow for document */
+.paper-shadow {
+  box-shadow:
+    0 1px 3px rgba(26, 18, 9, 0.08),
+    0 4px 16px rgba(26, 18, 9, 0.1),
+    0 12px 48px rgba(26, 18, 9, 0.08);
+}
+
+/* Gold button */
+.btn-gold {
+  background: linear-gradient(135deg, #c4993a 0%, #d4ae5a 100%);
+  color: #0b1629;
+  font-family: var(--font-dm-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.btn-gold:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.btn-gold:disabled {
+  background: #3a5070;
+  color: #7a90a8;
+  cursor: not-allowed;
+  transform: none;
+  opacity: 1;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.4s ease-out both;
+}
